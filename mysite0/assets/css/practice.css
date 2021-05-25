@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/***************기본초기화 셋팅**************** */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, 
+legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;    
+}
+body {font-family: "맑은 고딕" , 돋음; font-size: 12px;}
+
+ol,ul {list-style-type: none;}    /* 이런것들은 경험에 의해 매번 똑같으니 한줄로 */
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+
+/* clearfix */
+.clearfix {*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* ************************초기화***************************** */
+
+/************************레이아웃 ****************************** */
+#wrap {
+    width: 1000px; 
+    margin: 0px auto;    /* 오토를 넣엇을경우 자동으로 화면 가운데로 이동함 */
+}
+#header {
+    padding: 0px 5px 10px 5px; /* 패딩을 넣은 이유는 제목과 로그인을 안쪽으로 띄우기위함 */
+    border-bottom: 1px solid #d9d9d9;
+}
+#nav {
+    padding: 10px 0px 10px 0px; /* 마진줬을땐 보더 밖이 밀려남 */
+    border-bottom: 1px solid #d9d9d9;
+}
+#content {
+    padding: 9px 9px 9px 9px;    
+}
+#footer {
+    padding: 20px 0px 20px 0px;  /* 패딩값을 준이유는 카피라이트부분을 가운데쪽으로 이동하기위함 */
+    background-color: #42C385; 
+    text-align: center;
+}
+
+/********************************************************************* */
+
+/****************************헤더 **************************************/
+
+#header h1>a {
+    float: left;
+    font-size: 35px;
+    color: #05b42b;
+}
+#header ul {
+    float: right;
+    margin: 12px 0px 0px 0px; /* 헤더부분에서 패딩값을 주었기때문에 밑으로 내리기위함 */
+}
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0px 10px;  /* 로그인과 회원가입부분을 떨어뜨리기위함 */
+    padding: 7px 7px 7px 7px; /* 로그인과 회원가입을 박스안 가운데로 정렬 */
+    border: 1px solid #8c9604;
+    background-color: #3DB663;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 8px;
+}
+
+/* ************************************************** */
+
+/* ***********************네비게이션***************** */
+#nav ul>li {
+    float: left;
+    width: 249px;      /* 249로 놓는 이유는 전체 width값을 1000으로 잡았기때문에 보더1포함 250 */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+}
+
+#nav ul>li.right-none {
+    border-right: none;
+}
+/* ************************************************ */
+
+/* ******************콘텐츠 *****************************/
+#content #danny {               /* img에 클래스를 안주고 아이디를 주는 이유는  */
+    width: 330px;               /* 클래스는 포괄적일때 아이디는 특정할때임 */
+    margin: 0px 15px 0px 0px;  /* id> class>tag  */
+    float: left;               /* right마진준 이유는 내용과 떨어뜨리기위함 */
+}                              
+
+#content #greeting {
+    float: left;
+}
+
+#content #greeting #mini-title {
+    margin: 0px 0px 30px 0px;   /* 마진준이유는 아래 내용 문단과 떨어뜨리기위함 */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#content #greeting #determination {
+    font-size: 20px;
+}
+
+/* ************************************************** */

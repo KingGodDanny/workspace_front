@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 처음 할때 잡아놓는 초기화 속성 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, 
+legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    font-family: "맑은 고딕" , 돋음;
+    font-size: 12px;        
+}
+
+/* 게시판외곽 */
+
+#board {
+    width: 600px;      
+}
+
+/* 폼    그룹 */
+
+.form-group {
+    padding: 8px 8px 8px 8px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.form-txt {
+    display: inline-block;
+    width: 80px;
+}
+
+/* 아이디 , 패스워드, 이름*/ 
+
+#txt-uid, #txt-upw, #txt-uname {
+    width: 140px;
+}
+
+/* 주소 */
+
+#txt-address {
+    
+    width: 380px;
+}
+
+/* 이동통신사 */
+
+#sel-telecom {
+    width: 110px;
+}
+
+/* ------나이,,취미------- */
+
+input[type="radio"],  input[type="checkbox"] {
+    margin: 0px 8px 0px 0px;
+}
+
+/* 자기소개 */
+#introduce {
+    float: left;
+}
+
+#area-content {
+    width: 387px;
+    height: 130px;
+}
+
+/* 버튼 */
+
+.btn-area {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+}
+
+.btn-area > button {
+    width: 70px;
+    padding: 5px 5px 5px 5px;
+}
+
+.botop-none {
+    border-top: none;
+}
+
+

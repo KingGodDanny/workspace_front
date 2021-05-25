@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*$$$$$$$$$$$$$$$$$$$$ 컨텐츠 메인페이지 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+#full-content #profile-img {
+    margin: 0px 20px 0px 0px;           /* 특이한 사항으로 두개의 속성에  */
+    width: 300px;                       /* 좌우로 각각 마진 20씩 넣으면  */
+    float: left;                        /* 합산이 되어 적용이된다 */
+}
+
+#full-content #greetings {
+    float: left;
+}
+
+#full-content #greetings #greet {
+    margin: 0px 0px 40px 0px;           /* greet에 마진을 아래로 20 */
+    font-size: 20px;                    /* desc에서 위로20줄경우 40으로 */
+    font-weight: bold;                  /* 합산되지   않는다 */
+}
+
+#full-content #greetings #desc {
+   
+    font-size: 15px;
+}

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/***************기본초기화 셋팅**************** */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, 
+legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;    
+}
+body {font-family: "맑은 고딕" , 돋음; font-size: 12px;}
+
+ol,ul {list-style-type: none;}    /* 이런것들은 경험에 의해 매번 똑같으니 한줄로 */
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+
+/* clearfix */
+.clearfix {*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* ************************초기화***************************** */
+
+/* ***********************레이아웃*************************** */
+#wrap {width: 1000px; margin: 0px auto;}
+
+#header {
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid #bfbfbf; 
+}
+#nav {
+    padding: 10px 0px 10px 0px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@대문전체화면사용################ */
+#full-content {
+    padding: 15px 10px 15px 10px;
+}
+
+/* ####################2단화면사용시@@@@@@@@@@@@@@@@@@@@@ */
+#content {
+    padding: 15px 0px 15px 0px;
+}
+
+#footer {
+    padding: 20px 0px 20px 0px;
+    background-color: #dddddd;
+    text-align: center;
+}
+/* ************************************************************** */
+
+/**************************** 헤더******************************************* */
+#header h1>a {                 /* #header처럼 id가 맨앞에 오면 속성값이 쌔짐 */
+    float: left;                /* h1이 더 있다는 가정하에 #header> 하면안됌 */
+    margin: 0px 0px 0px 0px;
+    font-size: 35px;            
+    color: #79b30b;
+}
+
+#header ul {
+    float: right;
+    margin: 16px 0px 0px 0px;
+}
+
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid #bfbfbf;
+    background-color: #efefef;
+    border-radius: 4px 4px 4px 4px;
+}
+/**************************** 헤더******************************************* */
+
+/*********************** 네이게이션 ******************************************/
+#nav ul>li {
+    width: 249px;             /* 마진값으로 가운데 정렬할수도있지만 width 간편한방법임 */
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #bfbfbf;
+}
+
+#nav ul>li.last {               /* 그냥 .last를 하면 위에 #nav 아이디값이 */
+    border-right: none;          /* 강해서 none이 안먹힘 */
+}
+/* ******************네이게이션************************************************** */
+
+/* *************************컨텐츠************************************************ */
+
+/* ######################컨텐츠 2번째 왼쪽게시판페이지################################ */
+#content #aside {
+    float: left;
+    margin: 0px 20px 0px 0px;    /* 오른쪽마진은 옆 메인섹터를 밀어내기위함 */
+    width: 180px;                /* 게시판리스트 박스의 크기를 정함 */
+}
+
+#content #aside h2 {
+    padding: 20px 15px 20px 15px;
+    background-color: #d9d9d9;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content #aside ul>li {
+    margin: 6px 0px 0px 0px;        /* 위아래로 마진값은 합쳐지지않음 */
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #a6a6a6;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^컨텐츠 2번째 오른쪽메인게시판^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+#content #main {
+    float: left;
+    width: 800px;
+}    
+
+#content #main #main-head {
+    margin: 0px 0px 20px 0px;
+    border-bottom: 1px solid #a6a6a6;       /* 따로 id값을 나눈이유는 밑에 만들어질 게시판에도 */
+}                                             /* 밑줄이 생기기때문에 또 한번분리해줌 */
+
+
+#content #main #main-head h3 {
+    float: left;
+    margin: 20px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content #main #main-head ul {
+    float: right;
+    
+}
+#content #main #main-head ul>li {
+    float: left;
+    margin: 25px 0px 0px 0px;
+    font-size: 15px;
+}
+
+#content #main #main-head ul>li:after {
+    content: ">";
+}
+
+#content #main #main-head ul>li.last-none:after {
+    content: "";
+}

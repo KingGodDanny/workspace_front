@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+#board #search-area {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #search-area form {
+      
+      float: right;
+}
+
+#board #search-area form input[type="text"] {
+    width: 150px;
+    height: 25px;
+}
+
+#board #search-area form button {
+    padding: 3px 5px 3px 5px;    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ 게시판 리스트@@@@@@@@@@@@@ */
+#board #board-list {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #board-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+#board #board-list table>thead>tr>th {
+    background-color: #dddddd;
+}
+
+#board #board-list table>tbody>tr>td {
+    border-top: 1px dotted #808080;
+    text-align: center;
+}
+
+#board #board-list table>thead>tr>th, #board table>tbody>tr>td {
+    padding: 8px 5px 8px 5px;
+}
+
+/* ######################################페이징#################### */
+#board #pager {
+        text-align: center;          
+}
+
+#board #pager ol {
+    width: 190px;                       
+    display: inline-block;        /* 마진 오토로 줄것인가 인라인블럭에 얼라인 센터로 줄것인가  */
+   /*  margin: 0 auto;  */                    /* 잘 선택해서 사용해야함 */
+}
+
+#board #pager ol>li {
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+#board #pager ol>li>a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+#board #pager #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+}
